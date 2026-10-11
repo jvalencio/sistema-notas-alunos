@@ -11,5 +11,98 @@
         <h1 class="titulo">Lançamento de Notas</h1>
         <p class="subtitulo">Insira as notas abaixo para calcular a média.</p>
     </header>
+
+    <main class="conteudo-principal">
+        <section class="lancamento-notas">
+
+            <form id="form-notas">
+                <div class="campo-nome">
+                    <label for="nome-aluno">Nome do aluno:</label>
+                    <input
+                        class="entrada-nome"
+                        type="text"
+                        id="nome-aluno"
+                        name="nome-aluno"
+                        minlength="5"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="campo-ra">
+                    <label for="ra">RA:</label>
+                    <input
+                        class="entrada-ra"
+                        type="text"
+                        id="ra"
+                        name="ra"
+                        minlength="7"
+                        maxlength="7"
+                        required
+                    >
+                </div>
+
+                <div class="selecao-curso">
+                    <label for="cursos">Curso:</label>
+                    <select class="entrada-curso" id="cursos" name="curso">
+                        <option>Selecione</option>
+                        <option>Análise e Desenvolvimento de Sistemas</option>
+                        <option>Ciência da Computação</option>
+                        <option>Inteligência Artificial</option>
+                        <option>Segurança da Informação</option>
+                    </select>
+                </div>
+
+                <div class="selecao-semestre">
+                    <label for="semestre">Semestre:</label>
+                    <select class="entrada-semestre" id="semestre" name="semestre">
+                        <option>1º</option>
+                        <option>2º</option>
+                        <option>3º</option>
+                        <option>4º</option>
+                        <option>5º</option>
+                        <option>6º</option>
+                        <option>7º</option>
+                        <option>8º</option>
+                    </select>
+                </div>
+
+                <div class="caixa-notas">
+                    <div class="campo-nota">
+                        <label for="nota-p1">Nota da P1:</label>
+                        <input
+                            class="entrada-nota"
+                            type="number"
+                            id="nota-p1"
+                            name="nota-p1"
+                            step="0.5"
+                            min="0"
+                            max="10"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo-nota">
+                        <label for="nota-p2">Nota da P2:</label>
+                        <input
+                            class="entrada-nota"
+                            type="number"
+                            id="nota-p2"
+                            name="nota-p2"
+                            step="0.5"
+                            min="0"
+                            max="10"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <button class="btn-calcular" type="submit">
+                    Calcular média
+                </button>
+            </form>
+
+        </section>
+    </main>
 </body>
 </html>
